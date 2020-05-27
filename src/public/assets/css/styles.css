@@ -1,0 +1,402 @@
+body{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    /*fuentes*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased; 
+    -moz-font-smoothing: antialiased; 
+    -moz-ozx-font-smoothing: antialiased; 
+}
+
+#header {
+    border: 1px solid black;
+    height: 118px;
+    width: 100%;
+    background: white;
+    border-bottom: 2px solid #ccc;
+    border-top: 0px solid #61dafb;
+}
+
+.center {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.clearfix{
+    clear: both;
+    /*La propiedad CSS clear especifica si un elemento puede estar al lado de elementos flotantes 
+    que lo preceden o si debe ser movido (cleared) debajo de ellos. 
+    La propiedad clear aplica a ambos elementos flotantes y no flotantes.*/
+    float: none;
+}
+
+
+#logo {
+    width: 40%;
+    font-size: 30px;
+    float: left;
+    margin-top: 35px;
+}
+
+#logo img {
+    display: block;
+    float: left;
+    height: 65px ;
+    margin-top: -12px;
+    /*
+    animation-duration: 2s;
+    animation-name: slidein;
+    */
+}
+/*
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 100%; 
+    }
+  
+    75% {
+      font-size: 300%;
+      margin-right: 25%;
+      width: 150%;
+    }
+  
+    to {
+      margin-right: 0%;
+      width: 100%;
+    }
+  }
+  */
+
+#brand {
+    /*display: block;*/
+    margin: 0px;
+    margin-left: -0px;
+    margin-bottom: -10px;
+    line-height: 43px;
+    text-shadow: 0px 0px 2px #444;
+}
+
+#menu {
+    width: 60%;
+    float: right;
+    font-size: 18px;
+}
+
+
+#menu ul { /* selector que hace referencia a la etiqueta ul dentro del menu */
+    /* dimension de la ubicación en altura */
+    line-height: 74px;
+    width: 90%;
+
+}
+
+#menu ul li {
+    /* muestra los elementos de la lista horizontalmente */
+    display: inline-block;
+    /*quita los puntos viñeta de la listak*/
+    list-style: none;
+    height: 45px;
+    /*muestra los elementos de la lista con margen hacia izq y derecha*/
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+
+#menu a {
+    /*quita el subrayado del hiperlink*/
+    text-decoration: none;
+    color: #444;
+    /*Transisiona cambiar el color cuando pasa el puntero del mouse sobre el elemento 
+    está ligado a la propiedad "hover"*/
+    transition: 300ms all;
+}
+
+#menu a:hover {
+    /*hover permite cambiar el color cuando pasa el puntero del mouse sobre el elementok*/
+    color: #38a7c5;
+}
+
+#slider{
+    /*podríamos dejar el background fijo
+    background: #61dafb;*/
+    width: 100%;
+    height: 350px;
+    /*line-height 320 permite dejar la línea más o menos en el medio
+    line-height: 320px;*/
+    /*color letra*/
+    color: white;
+    text-shadow: 0px 0px 5px #444;
+
+    /*... ó podríamos dejar el background degradado. Codigo extraido de https://www.cssmatic.com/ gradient generator
+    */
+    background: rgba(255,255,255,1);
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 9%, rgba(50,26,113,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(9%, rgba(246,246,246,1)), color-stop(100%, rgba(50,26,113,1)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 9%, rgba(50,26,113,1) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 9%, rgba(50,26,113,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 9%, rgba(50,26,113,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 9%, rgba(50,26,113,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#321a71', GradientType=0 )
+}
+
+#slider h1{
+    margin-top: 0.2px;
+    padding: 0px;
+    padding-top: 120px;
+    text-align: center;
+}
+
+.btn-white{
+    display: block;
+    background: white;
+    color: black;
+    padding: 10px;
+    width: 100px; 
+    height: 30px;
+    margin: 0px auto;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-shadow: none;
+    text-decoration: none;
+    line-height: 30px;
+    box-shadow: 0px 0px 5px #444;
+    border-radius: 10px;
+    transition: 300ms all;
+    /*Nota: la propiedad transition funciona con la clase .btn-white:hover*/
+}
+
+.btn-white:hover{
+    /*cuando pasa el puntero del mouse arriba del botón, hace transición y cambia de color*/
+    background: #444;
+    color: white;
+}
+
+#slider.slider-small{
+    height: 150px;
+}
+
+#slider.slider-small h1{
+    margin-top: 0.2px;
+    padding: 0px;
+    padding-top: 50px;
+    text-align: center; 
+}
+
+#content{
+    width: 70%;
+    float: left;
+    min-height: 450px ;
+    margin-right: 20px  ;
+    /*border: 1px solid red;*/
+
+}
+
+
+/*CSS Tabla*/
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 25px;
+    border-color: black
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit
+}
+
+tfoot {
+    display: table-footer-group;
+    vertical-align: middle;
+    border-color: inherit
+}
+
+table > tr {
+    vertical-align: middle;
+}
+
+col {
+    display: table-column
+}
+
+colgroup {
+    display: table-column-group
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit
+}
+
+td, th {
+    display: table-cell;
+    vertical-align: inherit
+}
+
+th {
+    font-weight: bold
+}
+
+caption {
+    display: table-caption;
+    text-align: -webkit-center
+}
+
+
+#contentForm{
+    width: 100%;
+    float: left;
+    min-height: 450px ;
+    margin-right: 20px  ;
+    /*border: 1px solid red;*/
+
+}
+
+#contentTable{
+    width: 100%;
+    float: left;
+    min-height: 450px ;
+    margin-right: 20px  ;
+    /*border: 1px solid red;*/
+
+}
+
+
+
+
+
+#sidebar{
+    width: 25%;
+    float: left;
+    /*border: 1px solid green;*/
+}
+
+.sidebar-item{
+    background: #f7f7f7;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.sidebar-item h3{
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;  
+    border-bottom: 3px solid #eee;
+}
+
+
+.sidebar-item .btn{
+    margin: 0px auto;
+    margin-top: 10px;
+}
+
+
+.btn{
+    display: block;
+    background: black;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+    max-width: 120px;
+    transition: 300ms;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-success{
+    background: rgb(23,150,19);
+}
+
+.btn-danger{
+    background: red;
+}
+
+.btn-warning{
+    background: orange;
+}
+
+
+.btn-success:hover{
+    background: black;
+}
+
+.btn-warning:hover{
+    background: black;
+}
+
+.btn-danger:hover{
+    background: black;
+}
+
+.mid-form{
+    width: 50%;
+    margin: 0px auto; /*centra el form*/
+}
+
+.mid-form label{
+    display: block;
+    float: left;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+ /*Selector que permite manipular elemento input del form, y el valor type text de input*/
+input[type="text"],
+textarea,radio{
+    width: 100%;
+    min-height: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    padding: 3px; /*agranda el input*/
+    margin-bottom: 5px;
+    transition: 300ms all;
+}
+
+input[type="text"]:focus{ /*similar a hover pero es cuando uno hace clic y se queda ahí*/
+    box-shadow: 0px 0px 5px #444 inset;
+}
+
+textarea{
+    width: 100%;
+    height: 150px;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 300px;
+    min-height: 150px;
+
+}
+
+.radibuttons{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+
+
+
+#footer{
+    background: #ccc;
+    width: 100%;
+    height: 77px;
+    line-height: 77px;
+    color: #444;
+}

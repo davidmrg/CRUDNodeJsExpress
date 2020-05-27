@@ -1,0 +1,75 @@
+<%- include('partials/_header') %>
+
+
+<!--Elemento Slider-->
+<div id="slider" class="slider-big">
+    <h1>SISTEMA CRUD C3</h1>
+    <a href="/" class="btn-white">HOME</a>
+</div>
+
+<!--Elememtno de Contenido central-->
+<div class="center">
+    <section id="content">
+
+        <h2>Últimos Registros</h2>
+
+
+
+        <section id="tableFormat">
+            <table class="table">
+                <caption class="text-center"> </caption>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th data-priority="1">Nombre completo</th>
+                        <th data-priority="2">Número contacto</th>
+                        <th data-priority="3">Comentarios</th>
+                        <th data-priority="4">Genero</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for(var i = 0; i < listaRegistros.length; i++ ) { %>
+                    <tr>
+                        <td><%= i + 1 %></td>
+                        <td><%=  listaRegistros[i].nombres %></td>
+                        <td><%=  listaRegistros[i].contacto %></td>
+                        <td><%=  listaRegistros[i].comentarios %></td>
+                        <td><%=  listaRegistros[i].genero %></td>
+                    </tr>
+                    <% } %>
+
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5" class="text-center">Información extraída de la Bdd MongoDB</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+
+        </section>
+
+
+    </section>
+
+    <aside id="sidebar">
+        <div id="nav-blog" class="sidebar-item">
+            <h3>Puedes hacer esto:</h3>
+            <a href="/formulario" class="btn btn-success">Crear registro</a>
+            <a href="/edit" class="btn btn-success">Editar registros</a>
+            <a href="/delete" class="btn btn-success">Borrar registro</a>
+        </div>
+
+
+
+        
+
+    </aside>
+
+    <!--clearfix permite acomodar el footer para que no se monte arriba-->
+    <div class="clearfix"></div>
+</div>
+
+
+<%- include('partials/_footer') %>

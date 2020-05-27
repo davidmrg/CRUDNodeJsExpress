@@ -1,0 +1,56 @@
+<%- include('partials/_header') %>
+
+<!--Elemento Slider-->
+<div id="slider" class="slider-big" >
+    <h1>SISTEMA CRUD C3</h1>
+    <a href="/" class="btn-white">ir a Inicio</a>
+</div>
+
+<!--Elementno de Contenido central-->
+<div class="center">
+<section id="contentTable">
+    
+    <h2>Editar Registros</h2>
+
+        <table class="table">
+            <caption class="text-center"> </caption>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th data-priority="1">Nombre completo</th>
+                    <th data-priority="2">Número contacto</th>
+                    <th data-priority="3">Comentarios</th>
+                    <th data-priority="4">Genero</th>
+                    <th data-priority="5">Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(var i = 0; i < listaRegistros.length; i++ ) { %>
+                <tr>
+                    <td><%= i + 1 %></td>
+                    <td><%=  listaRegistros[i].nombres %></td>
+                    <td><%=  listaRegistros[i].contacto %></td>
+                    <td><%=  listaRegistros[i].comentarios %></td>
+                    <td><%=  listaRegistros[i].genero %></td>
+                    <td><a href="/edit/<%=  listaRegistros[i]._id %>" class="btn btn-warning">Editar</a></td>
+                </tr>
+                <% } %>
+
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5" class="text-center">Información extraída de la Bdd MongoDB</td>
+                </tr>
+            </tfoot>
+        </table>
+
+
+
+    
+</section>
+<!--clearfix permite acomodar el footer para que no se monte arriba-->
+<div class="clearfix"></div>
+</div>
+
+<%- include('partials/_footer') %>
