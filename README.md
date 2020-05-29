@@ -1,6 +1,6 @@
 # CRUD MongoDB Cloud NodeJs / Express
 
-Sistema CRUD educacional desarrollado en Node.Js y CSS puro para entender el funcionamiento las operaciones básicas (Create Read Update Delete). El sistema está implementado con el paquete de dependencias Express y está implementado con el sistema DBaaS Cloud Atlas de Mongo DB.
+Sistema CRUD educacional desarrollado en Node.Js y CSS puro para entender el funcionamiento las operaciones básicas (Create Read Update Delete). El sistema está implementado con el paquete de dependencias Express y usa conexión a sistema DBaaS Cloud Atlas de Mongo DB.
 
 Requisitos para descargar el proyecto (clonar) y usar:
 - Tener instalado git (www.git-scm.com)
