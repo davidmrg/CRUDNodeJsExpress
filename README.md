@@ -5,6 +5,7 @@ Sistema CRUD educacional desarrollado en Node.Js y CSS puro para entender el fun
 Requisitos para descargar el proyecto (clonar) y usar:
 - Tener instalado git (www.git-scm.com)
 - Configurar una cuenta de MongoDB Atlas (https://www.mongodb.com/cloud/atlas) y dar de alta un Shared Cluster (Puede ser la opción Free). De esta manera puedes obtener un "connection string" para reemplazar el usado en el código fuente de este repositorio. (línea 33 del /src/app.js)
+- Tener instalada la última versión de node (https://nodejs.org/en/)
 
 Pasos para clonar:
 1. Entrar a algún directorio de tu Sistema Operativo en una ventana terminal (CMD en Windows)
