@@ -11,12 +11,12 @@ Requisitos para descargar el proyecto (clonar) y usar:
 
 Pasos para clonar:
 1. Entrar a algún directorio de tu Sistema Operativo en una ventana terminal (CMD en Windows)
-2. ejecutar el comando: git clone https://github.com/davidmrg/CRUDNodeJsExpress.git
+2. ejecutar el comando:```git clone https://github.com/davidmrg/CRUDNodeJsExpress.git```
 
 Pasos para ejecutar:
 1. Ingresar al directorio del proyecto, ingresar al sub-directorio /src.
-2. Ejecutar comando: node app.js (Si usas nodemon: nodemon app.js)
-3. Abrir en un navegador: localhost:3000
+2. Ejecutar comando: ```node app.js``` (Si usas nodemon: ```nodemon app.js```)
+3. Abrir en un navegador: http://localhost:3000
 
 
 Pantalla Index:
