@@ -16,7 +16,8 @@ Sistema CRUD educacional desarrollado en Node.Js y CSS puro para entender el fun
 
 ### Pasos para ejecutar:
 1. Ingresar al directorio del proyecto (vía consola terminal / CMD), ingresar al sub-directorio /src.
-2. Ejecutar comando:```node app.js``` (Si usas nodemon:```nodemon app.js```)
+2. Ejecutar comando```npm install```para descargar dependencias
+3. Ejecutar comando```node app.js``` para ejecutar proyecto (Si usas nodemon:```nodemon app.js```)
 3. Abrir en un navegador: http://localhost:3000
 
 
