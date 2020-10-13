@@ -1,6 +1,5 @@
 # CRUD MongoDB Cloud NodeJs / Express
 
-UPDATE: Ver aplicación en este URL (implementado en IBM Cloud): https://cruddemoaunar.mybluemix.net
 
 ## Introducción
 Sistema CRUD educacional desarrollado en Node.Js y CSS puro para entender el funcionamiento las operaciones básicas (Create Read Update Delete). El sistema está implementado con el paquete de dependencias Express y usa conexión a sistema DBaaS Cloud Atlas de Mongo DB.
